@@ -1,0 +1,89 @@
+.app-icon {
+    height: 120px;
+    width: 120px;
+}
+
+.explanation-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.explanation-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.artwork-container {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.arrow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.service-link {
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.service-icon {
+    margin-right: 5px;
+}
+
+.apple-music {
+    background-color: #f9CcD7;
+    color: #fc3c44;
+}
+
+.apple-music svg path {
+    fill: #fc3c44;
+}
+
+.spotify {
+    background: #DBFFDA;
+    color: #05BC01;
+}
+
+.spotify svg path {
+    fill: #05BC01;
+}
+
+.service-link p {
+    line-height: 1.1;
+    font-size: 1rem;
+}
+
+.link-text {
+    font-size: 0.75rem;
+}
+
+.download-container {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.download-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

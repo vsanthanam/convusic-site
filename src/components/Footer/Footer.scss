@@ -1,0 +1,34 @@
+.footer-container {
+    background-color: #EFECFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 80px;
+}
+
+.footer-item {
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #7B11A7;
+}
+
+a:link {
+    text-decoration: none;
+    color: #7B11A7;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #7B11A7;
+}
+  
+a:hover {
+    text-decoration: none;
+    color: #7B11A7;
+}
+  
+a:active {
+    text-decoration: none;
+    color: #7B11A7;
+}
