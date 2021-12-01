@@ -13,22 +13,49 @@
     color: #7B11A7;
 }
 
-a:link {
+.footer-item a:link {
     text-decoration: none;
     color: #7B11A7;
 }
 
-a:visited {
+.footer-item a:visited {
     text-decoration: none;
     color: #7B11A7;
 }
   
-a:hover {
+.footer-item a:hover {
     text-decoration: none;
     color: #7B11A7;
 }
   
-a:active {
+.footer-item a:active {
     text-decoration: none;
     color: #7B11A7;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    .footer-item {
+        color: #FFFFFF;
+    }
+
+    .footer-container {
+        background-color: #000000;
+    }
+
+    .footer-item a:link {
+        color: #FFFFFF;
+    }
+    
+    .footer-item a:visited {
+        color: #FFFFFF;
+    }
+      
+    .footer-item a:hover {
+        color: #FFFFFF;
+    }
+      
+    .footer-item a:active {
+        color: #FFFFFF;
+    }
 }

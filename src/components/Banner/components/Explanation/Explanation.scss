@@ -59,6 +59,12 @@
     color: #fc3c44;
 }
 
+@media (prefers-color-scheme: dark) {
+    .apple-music {
+        background: #5c0c14;
+    }
+}
+
 .apple-music svg path {
     fill: #fc3c44;
 }
@@ -66,6 +72,12 @@
 .spotify {
     background: #DBFFDA;
     color: #05BC01;
+}
+
+@media (prefers-color-scheme: dark) {
+    .spotify {
+        background: #2A5329;
+    }
 }
 
 .spotify svg path {

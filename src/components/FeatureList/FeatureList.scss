@@ -4,8 +4,18 @@
     justify-content: center;
 }
 
+@media (prefers-color-scheme: dark) {
+    .feature-list-section-container {
+        background-color: #000000;
+    }
+}
+  
 .feature-list-section-content {
     max-width: 700px;
+    flex-direction: column;
+}
+
+.feature-grid {
     flex-direction: column;
 }
 
@@ -14,4 +24,29 @@
     flex-direction: row;
     gap: 120px;
     padding: 60px;
+}
+
+.inspiration {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.inspiration a:link {
+    text-decoration: none;
+    color: red;
+}
+
+.inspiration a:visited {
+    text-decoration: none;
+    color: red;
+}
+
+.inspiration a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.inspiration a:active {
+    text-decoration: none;
+    color: red;
 }

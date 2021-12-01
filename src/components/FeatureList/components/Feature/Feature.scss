@@ -2,3 +2,13 @@
     flex-basis: 100%;
     line-height: 1.5;
 }
+
+path {
+    fill: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+    path {
+        fill: #FFFFFF;
+    }
+}
