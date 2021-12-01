@@ -1,6 +1,5 @@
 import React from 'react';
 import './Banner.scss';
-import '../../normalize.css';
 import Header from './components/Header/Header';
 import Explanation from './components/Explanation/Explanation';
 

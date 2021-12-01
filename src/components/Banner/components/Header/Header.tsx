@@ -1,6 +1,5 @@
 import React from 'react';
 import './Header.scss';
-import './../../../../normalize.css';
 
 type HeaderProps = {
     appName: String

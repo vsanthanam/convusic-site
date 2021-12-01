@@ -1,6 +1,5 @@
 import React from 'react';
 import './Footer.scss';
-import '../../normalize.css';
 
 // type FooterItem = {
 //     title: String,

@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.scss';
-import './normalize.css';
 import Banner from './components/Banner/Banner';
 import FeatureList from './components/FeatureList/FeatureList'
 import Phone from './components/Phone/Phone';

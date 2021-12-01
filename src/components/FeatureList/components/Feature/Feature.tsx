@@ -1,6 +1,5 @@
 import React from 'react';
 import './Feature.scss';
-import './../../../../normalize.css';
 
 type FeatureProps = {
     name: String,

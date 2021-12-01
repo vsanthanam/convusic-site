@@ -1,6 +1,5 @@
 import React from 'react';
 import './FeatureList.scss';
-import '../../normalize.css';
 import Feature from './components/Feature/Feature';
 
 class FeatureList extends React.Component {
