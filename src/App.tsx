@@ -1,17 +1,25 @@
 import React from 'react';
 import './App.scss';
-import Banner from './components/Banner/Banner';
-import FeatureList from './components/FeatureList/FeatureList'
-import Phone from './components/Phone/Phone';
+import Home from './Home/Home';
+import Privacy from './Privacy/Privacy';
 import Footer from './components/Footer/Footer';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App(): JSX.Element {
   return (
     <div>
-      <Banner />
-      <FeatureList />
-      <Phone />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/privacy" element={<Privacy />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }
