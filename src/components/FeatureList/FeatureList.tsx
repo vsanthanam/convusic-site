@@ -15,7 +15,7 @@ class FeatureList extends React.Component {
                         </div>
                         <div className="row">
                             <Feature name="Private & Secure" description="Convusic's client apps and browser extensions feature no advertising, use no third-party trackers, and collect no user identifiable data of any kind." icon="shield"/>
-                            <Feature name="Cross Platform" description="Convusic works on iPhone, iPad, and Macintosh, and supports iCloud syncing and Handoff for a seamless, integrated experience." icon="artist"/>
+                            <Feature name="Cross Platform" description="Convusic works on iPhone, iPad, and Macintosh, and supports iCloud syncing and Handoff for a seamless, integrated experience." icon="connected-apps"/>
                         </div>
                     </div>
                     <div className="inspiration">
