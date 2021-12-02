@@ -10,3 +10,9 @@
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+    .policy {
+        padding: 16px;
+    }
+}

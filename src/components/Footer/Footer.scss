@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    height: 80px;
 }
 
 .footer-item {
@@ -57,5 +56,17 @@
       
     .footer-item a:active {
         color: #FFFFFF;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        height: 80px;
     }
 }
