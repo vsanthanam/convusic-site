@@ -19,7 +19,7 @@ class FeatureList extends React.Component {
                         </div>
                     </div>
                     <div className="inspiration">
-                        <p className="inspiration">Inspired by <a href="https://itunes.apple.com/app/id1585734696">Amplosion</a> from <a href="https://www.twitter.com/ChristianSelig">@ChristianSelig</a></p>
+                        <p className="inspiration">Inspired by <a href="https://itunes.apple.com/app/id1585734696"><strong>Amplosion</strong></a> from <a href="https://www.twitter.com/ChristianSelig"><strong>@ChristianSelig</strong></a></p>
                     </div>
                 </div>
             </div>
