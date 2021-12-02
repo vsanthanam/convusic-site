@@ -2,34 +2,49 @@ import React from 'react';
 import './Footer.scss';
 import { Link } from "react-router-dom";
 
-// type FooterItem = {
-//     title: String,
-//     link: String
-// }
-
-// type FooterProps = {
-//     items: [FooterItem]
-// }
+enum FooterItemType {
+    Route,
+    URL
+}
 
 class Footer extends React.Component {
 
     render(): JSX.Element {
         return(
             <div className="footer-container">
-                <div className="footer-item">
-                    <p><Link to="/"><strong>Home</strong></Link></p>
-                </div>
-                <div className="footer-item">
-                    <p><strong><a href="https://twitter.vsanthanam.com">Twitter</a></strong></p>
-                </div>
-                <div className="footer-item">
-                    <p><Link to="privacy"><strong>Privacy</strong></Link></p>
-                </div>
-                <div className="footer-item">
-                    <p><strong><a href="mailto:talkto@vsanthanam.com">Contact</a></strong></p>
-                </div>
+                <FooterItem title="Home" type={FooterItemType.Route} destination="/" />
+                <FooterItem title="Twitter" type={FooterItemType.URL} destination="https://twitter.vsanthanam.com" />
+                <FooterItem title="Privacy" type={FooterItemType.Route} destination="privacy" />
+                <FooterItem title="Contact" type={FooterItemType.URL} destination="mailto:talkto@vsanthanam.com" />
             </div>
         )
+    }
+
+}
+
+type FooterItemProps = {
+    title: string
+    type: FooterItemType,
+    destination: string,
+};
+
+class FooterItem extends React.Component<FooterItemProps> {
+
+    render(): JSX.Element {
+        switch (this.props.type) {
+            case FooterItemType.URL:
+                return(
+                    <div className="footer-item">
+                        <p><strong><a href={this.props.destination}>{this.props.title}</a></strong></p>
+                    </div>
+                )
+            case FooterItemType.Route:
+                return(
+                    <div className="footer-item">
+                        <p><Link to={this.props.destination}><strong>{this.props.title}</strong></Link></p>
+                    </div>
+                )
+        }
     }
 
 }
