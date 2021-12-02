@@ -1,0 +1,24 @@
+h1 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    text-align: center;
+}
+  
+h1 .app-name {
+    font-weight: 700;
+    background-color: #B971D6;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-header-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.banner-header-content {
+    max-width: 700px;
+}
