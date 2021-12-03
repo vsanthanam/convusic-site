@@ -9,14 +9,14 @@
     flex-direction: column;
     align-items: center;
     justify-items: center;
-}
 
-.phone-bitmap {
-    max-width: 320px;
-}
-
-.laptop-bitmap {
-    max-width: 768px;
+    .phone-bitmap {
+        max-width: 320px;
+    }
+    
+    .laptop-bitmap {
+        max-width: 768px;
+    }
 }
 
 @media (max-width: 768px) {
