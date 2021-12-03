@@ -62,7 +62,7 @@
 }
 
 .apple-music {
-    background-color: #f9CcD7;
+    background-color: $apple-music-background-light;
     color: #fc3c44;
 
     svg {
@@ -116,7 +116,7 @@
     } 
     
     .apple-music {
-        background: #5c0c14;
+        background: $apple-music-background-dark;
     }
 
     .spotify {

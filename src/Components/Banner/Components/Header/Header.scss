@@ -1,3 +1,5 @@
+@import '../../../../Styles/Colors.scss';
+
 .banner-header-container {
     display: flex;
     align-content: center;
@@ -11,7 +13,7 @@
 
         .app-name {
             font-weight: 700;
-            background-color: #B971D6;
+            background-color: $convusic-highlight-color;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -24,7 +26,7 @@
 }
 
 @media (max-width: 768px) {
-    
+
     .banner-header-content {
         padding: 16px;
 
