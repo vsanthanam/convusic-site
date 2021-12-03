@@ -4,6 +4,7 @@ import './Privacy.scss';
 class Privacy extends React.Component {
 
 	render(): JSX.Element {
+		
 		return(
 			<div className="policy-container">
 				<div className="policy">
@@ -32,7 +33,8 @@ class Privacy extends React.Component {
 					<p>If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at talkto@vsanthanam.com.</p>
 				</div>
 			</div>
-		  );
+		);
+
 	}
 
 }

@@ -1,157 +1,172 @@
 @import '../../../../Styles/Colors.scss';
+@import '../../../../Styles/Shared.scss';
 
-.app-icon {
-    height: 120px;
-    width: 120px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
 
 .explanation-container {
+
     display: flex;
     justify-content: center;
     align-content: center;
-}
 
-.explanation-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.artwork-container {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-}
-
-.arrow {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.service-container {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.service-link {
-    display: flex;
-    align-items: center;
-    border-radius: 25px;
-    margin-right: 10px;
-    margin-left: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-
-    p {
-        line-height: 1.1;
-        font-size: 1rem;
+    .app-icon {
+        height: 120px;
+        width: 120px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
-}
 
-.service-icon {
-    margin-right: 5px;
-}
-
-.apple-music {
-    background-color: $apple-music-background-light;
-    color: $apple-music-stroke;
-
-    svg {
-        path {
-            fill: $apple-music-stroke;
+    .explanation-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .artwork-container {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .arrow {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .service-container {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .service-link {
+        display: flex;
+        align-items: center;
+        border-radius: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    
+        p {
+            line-height: 1.1;
+            font-size: 1rem;
         }
     }
-}
-
-.spotify {
-    background: $spotify-background-light;
-    color: $spotify-stroke;
-
-    svg {
-        path {
-            fill: $spotify-stroke;
+    
+    .service-icon {
+        margin-right: 5px;
+    }
+    
+    .apple-music {
+        background-color: $apple-music-background-light;
+        color: $apple-music-stroke;
+    
+        svg {
+            path {
+                fill: $apple-music-stroke;
+            }
         }
     }
-}
-
-.link-text {
-    font-size: 0.75rem;
-}
-
-.download-container {
-    padding-top: 60px;
-    padding-bottom: 40px;
-}
-
-.download-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.arrow {
-    svg {
-        path {
-            fill: $text-light-primary;
+    
+    .spotify {
+        background: $spotify-background-light;
+        color: $spotify-stroke;
+    
+        svg {
+            path {
+                fill: $spotify-stroke;
+            }
         }
+    }
+    
+    .link-text {
+        font-size: 0.75rem;
+    }
+    
+    .download-container {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    
+    .download-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .arrow {
+
+        svg {
+
+            path {
+                fill: $text-light-primary;
+            }
+
+        }
+        
     }
 }
 
 @media (prefers-color-scheme: dark) {
-    .arrow {
-        svg {
-            path {
-                fill: $text-dark-primary;
-            }
-        }
-    } 
-    
-    .apple-music {
-        background: $apple-music-background-dark;
-    }
 
-    .spotify {
-        background: $spotify-background-dark;
+    .explanation-container  {
+
+        .arrow {
+
+            svg {
+
+                path {
+                    fill: $text-dark-primary;
+                }
+
+            }
+
+        } 
+        
+        .apple-music {
+            background: $apple-music-background-dark;
+        }
+    
+        .spotify {
+            background: $spotify-background-dark;
+        }
     }
 }
 
 @media (max-width: 768px) {
-    .desktop-only {
-        display: none;
-    }
     
-    .service-icon {
-        margin-right: 0px;
-    }
+    .explanation-container {
 
-    .service-link {
-        margin-right: 5px;
-        margin-left: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        justify-content: center;
-    }
-
-    .service-container {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .app-icon {
-        height: 100px;
-        width: 100px;
-        margin-left: 10px;
-        margin-right: 10px;
+        .service-icon {
+            margin-right: 0px;
+        }
+    
+        .service-link {
+            margin-right: 5px;
+            margin-left: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            justify-content: center;
+        }
+    
+        .service-container {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    
+        .app-icon {
+            height: 100px;
+            width: 100px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
     }
 }

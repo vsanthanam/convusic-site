@@ -1,4 +1,5 @@
 @import '../../../../Styles/Colors.scss';
+@import '../../../../Styles/Shared.scss';
 
 .banner-header-container {
     display: flex;
@@ -38,7 +39,7 @@
 @media (max-width: 768px) {
 
     .banner-header-content {
-        padding: 16px;
+        @include mobile-padding;
 
         h1 {
             font-size: 1.675rem;

@@ -1,3 +1,5 @@
+@import '../Styles/Shared.scss';
+
 .policy {
     display: flex;
     flex-direction: column;
@@ -14,7 +16,7 @@
 
 @media (max-width: 768px) {
     .policy {
-        padding: 16px;
+        @include mobile-padding;
         line-height: 1.3;
     }
 }

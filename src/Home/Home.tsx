@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from '../Components/Banner/Banner';
 import FeatureList from '../Components/FeatureList/FeatureList'
-import Phone from '../Components/Phone/Phone';
+import Preview from '../Components/Preview/Preview';
 
 declare var window: any;
 
@@ -12,7 +12,7 @@ class Home extends React.Component {
             <div>
                 <Banner />
                 <FeatureList />
-                <Phone />
+                <Preview />
             </div>
         );
     }

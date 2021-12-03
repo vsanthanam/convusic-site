@@ -1,7 +1,8 @@
 import React from 'react';
 import './Explanation.scss';
 import AppIcon from './images/AppIcon.png';
-import AppStore from './images/AppStore.svg';
+import AppStoreLight from './images/AppStore-Light.svg';
+import AppStoreDark from './images/AppStore-Dark.svg';
 
 class Explanation extends React.Component {
 
@@ -49,7 +50,10 @@ class Explanation extends React.Component {
                     <div className="download-container">
                         <div className="download-content">
                             <a href="https://apps.apple.com/us/app/convusic/id1591366129">
-                                <img src={AppStore} width="218" height="66" alt="Available on the Apple App Store"/>
+                                <picture>
+                                    <source srcSet={AppStoreDark} media="(prefers-color-scheme: dark)" />
+                                    <img src={AppStoreLight} width="218" height="66" alt="Available on the Apple App Store"/>
+                                </picture>
                             </a>
                             <p>Requires iOS 15 or macOS 12</p>
                         </div>
