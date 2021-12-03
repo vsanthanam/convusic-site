@@ -1,3 +1,5 @@
+@import '../../../../Styles/Colors.scss';
+
 .app-icon {
     height: 120px;
     width: 120px;
@@ -48,6 +50,11 @@
     padding-right: 25px;
     padding-top: 5px;
     padding-bottom: 5px;
+
+    p {
+        line-height: 1.1;
+        font-size: 1rem;
+    }
 }
 
 .service-icon {
@@ -57,36 +64,23 @@
 .apple-music {
     background-color: #f9CcD7;
     color: #fc3c44;
-}
 
-@media (prefers-color-scheme: dark) {
-    .apple-music {
-        background: #5c0c14;
+    svg {
+        path {
+            fill: #fc3c44;
+        }
     }
-}
-
-.apple-music svg path {
-    fill: #fc3c44;
 }
 
 .spotify {
     background: #DBFFDA;
     color: #05BC01;
-}
 
-@media (prefers-color-scheme: dark) {
-    .spotify {
-        background: #2A5329;
+    svg {
+        path {
+            fill: #05BC01;
+        }
     }
-}
-
-.spotify svg path {
-    fill: #05BC01;
-}
-
-.service-link p {
-    line-height: 1.1;
-    font-size: 1rem;
 }
 
 .link-text {
@@ -102,6 +96,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.arrow {
+    svg {
+        path {
+            fill: $text-light-primary;
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .arrow {
+        svg {
+            path {
+                fill: $text-dark-primary;
+            }
+        }
+    } 
+    
+    .apple-music {
+        background: #5c0c14;
+    }
+
+    .spotify {
+        background: #2A5329;
+    }
 }
 
 @media (max-width: 768px) {

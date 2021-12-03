@@ -1,5 +1,7 @@
+@import '../../Styles/Colors.scss';
+
 .footer-container {
-    background-color: #EFECFF;
+    background-color: $background-light-secondary;
     display: flex;
     justify-content: center;
     align-items: center;

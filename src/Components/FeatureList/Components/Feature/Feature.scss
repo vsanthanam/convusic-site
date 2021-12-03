@@ -1,14 +1,22 @@
+@import '../../../../Styles/Colors.scss';
+
 .feature-container {
     flex-basis: 100%;
     line-height: 1.5;
-}
 
-path {
-    fill: #000000;
+    svg {
+        path {
+            fill: $text-light-primary
+        }
+    }
 }
 
 @media (prefers-color-scheme: dark) {
-    path {
-        fill: #FFFFFF;
-    }
+    .feature-container {
+        svg {
+            path {
+                fill: $text-dark-primary;
+            }
+        }
+    }   
 }
