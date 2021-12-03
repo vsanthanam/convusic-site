@@ -2,6 +2,8 @@ import React from 'react';
 import './Preview.scss';
 import LightPhone from './images/LightPhone.png';
 import DarkPhone from './images/DarkPhone.png';
+import LightPad from './images/LightPad.png';
+import DarkPad from './images/DarkPad.png';
 import Laptop from './images/Laptop.png';
 import MobileAppStoreLight from './images/MobileAppStore-Light.svg';
 import MobileAppStoreDark from './images/MobileAppStore-Dark.svg';
@@ -15,18 +17,18 @@ class Preview extends React.Component {
         let previewComponent: JSX.Element
         let downloadComponent: JSX.Element
 
-        if (navigator.platform.match(/iPad/i)) {
+        if (navigator.platform.match(/iPad/i) || (navigator.platform.match(/Mac/i) && navigator.maxTouchPoints > 2)) {
             previewComponent = (
                 <picture>
-                    <source srcSet={DarkPhone} media="(prefers-color-scheme: dark)" />
-                    <img className="phone-bitmap" src={LightPhone} alt="iPhone running Convusic" />
+                    <source srcSet={DarkPad} media="(prefers-color-scheme: dark)" />
+                    <img className="pad-bitmap" src={LightPad} alt="iPhone running Convusic" />
                 </picture>
             );
             downloadComponent = (
                 <a href="https://apps.apple.com/us/app/convusic/id1591366129">
                     <picture>
                         <source srcSet={MobileAppStoreDark} media="(prefers-color-scheme: dark)" />
-                        <img src={MobileAppStoreLight} width="218" height="66" alt="Available on the App Store" />
+                        <img className="ios-download" src={MobileAppStoreLight} width="218" height="66" alt="Available on the App Store" />
                     </picture>
                 </a>
             );
@@ -51,9 +53,9 @@ class Preview extends React.Component {
             );
             downloadComponent = (
                 <a href="https://apps.apple.com/us/app/convusic/id1591366129">
-                    <picture>
+                    <picture className="ios-download">
                         <source srcSet={MobileAppStoreDark} media="(prefers-color-scheme: dark)" />
-                        <img src={MobileAppStoreLight} width="218" height="66" alt="Available on the App Store" />
+                        <img className="ios-download" src={MobileAppStoreLight} width="218" height="66" alt="Available on the App Store" />
                     </picture>
                 </a>
             );
