@@ -1,13 +1,13 @@
 @import './Styles/Colors.scss';
 
 body {
-  background-color: $background-light-primary;
-  color: $text-light-primary;
+	background-color: $background-light-primary;
+	color: $text-light-primary;
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: $background-dark-primary;
-    color: $text-dark-primary;
-  }
+	body {
+    	background-color: $background-dark-primary;
+    	color: $text-dark-primary;
+  	}
 }

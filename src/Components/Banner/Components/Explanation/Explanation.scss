@@ -63,22 +63,22 @@
 
 .apple-music {
     background-color: $apple-music-background-light;
-    color: #fc3c44;
+    color: $apple-music-stroke;
 
     svg {
         path {
-            fill: #fc3c44;
+            fill: $apple-music-stroke;
         }
     }
 }
 
 .spotify {
-    background: #DBFFDA;
-    color: #05BC01;
+    background: $spotify-background-light;
+    color: $spotify-stroke;
 
     svg {
         path {
-            fill: #05BC01;
+            fill: $spotify-stroke;
         }
     }
 }
@@ -120,7 +120,7 @@
     }
 
     .spotify {
-        background: #2A5329;
+        background: $spotify-background-dark;
     }
 }
 

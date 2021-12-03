@@ -32,25 +32,11 @@
     text-align: center;
     padding-bottom: 40px;
 
-    a:link {
+    a {
         text-decoration: none;
         color: red;
     }
 
-    a:visited {
-        text-decoration: none;
-        color: red;
-    }
-
-    a:hover {
-        text-decoration: none;
-        color: red;
-    }
-
-    a:active {
-        text-decoration: none;
-        color: red;
-    }
 }
 
 @media (max-width: 768px) {

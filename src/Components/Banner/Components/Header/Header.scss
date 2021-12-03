@@ -13,7 +13,7 @@
 
         .app-name {
             font-weight: 700;
-            background-color: $convusic-highlight-color;
+            background-color: $convusic-highlight-light;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -23,6 +23,16 @@
 
 .banner-header-content {
     max-width: 700px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .banner-header-container {
+        h1 {
+            .app-name {
+                background-color: $convusic-highlight-dark;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
