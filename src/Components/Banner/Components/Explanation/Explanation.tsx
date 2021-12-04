@@ -1,6 +1,6 @@
 import React from 'react';
 import './Explanation.scss';
-import AppIcon from './images/AppIcon.png';
+import AppIcon from './images/AppIcon.svg';
 import AppStoreLight from './images/AppStore-Light.svg';
 import AppStoreDark from './images/AppStore-Dark.svg';
 import AppleMusicMobile from './images/AppleMusicMobile.svg';
