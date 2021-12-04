@@ -1,5 +1,6 @@
 import React from 'react';
 import './Privacy.scss';
+import PrivacyIcon from './images/privacy.svg';
 
 class Privacy extends React.Component {
 
@@ -8,8 +9,13 @@ class Privacy extends React.Component {
 		return(
 			<div className="policy-container">
 				<div className="policy">
-					<h2>Privacy Policy</h2>
-					<p>Varun Santhanam built the Convusic app as a Commercial app. This SERVICE is provided by Varun Santhanam and is intended for use as is. This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Convusic unless otherwise defined in this Privacy Policy.</p>
+					<div className="icon-container">
+						<picture>
+							<img src={PrivacyIcon} alt="Privacy" />
+						</picture>
+					</div>
+					<h1>Convusic Privacy Policy</h1>
+					<p>Varun Santhanam built the Convusic app as a Commercial app. This SERVICE is provided by Varun Santhanam and is intended for use as is. This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy. The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Convusic unless otherwise defined in this Privacy Policy.</p>
 					<h4>Information Collection and Use</h4>
 					<p>For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information. The information that I request will be retained on your device and is not collected by me in any way.</p>
 					<h4>Log Data</h4>
@@ -30,7 +36,7 @@ class Privacy extends React.Component {
 					<p>I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page.</p>
 					<p>This policy is effective as of 2021-10-26</p>
 					<h4>Contact Us</h4>
-					<p>If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at talkto@vsanthanam.com.</p>
+					<p>If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at <a href="mailto:talkto@vsanthanam.com">talkto@vsanthanam.com.</a></p>
 				</div>
 			</div>
 		);
