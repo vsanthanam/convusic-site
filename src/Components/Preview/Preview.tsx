@@ -16,7 +16,7 @@ class Preview extends React.Component {
 
     render() {
 
-        let appStoreComponent: JSX.Element = (
+        const appStoreComponent: JSX.Element = (
             <a href="https://apps.apple.com/us/app/convusic/id1591366129">
                 <picture>
                     <source srcSet={MobileAppStoreDark} media="(prefers-color-scheme: dark)" />
@@ -25,7 +25,7 @@ class Preview extends React.Component {
             </a>
         )
 
-        let macAppStoreComponent: JSX.Element = (
+        const macAppStoreComponent: JSX.Element = (
             <a href="https://apps.apple.com/us/app/convusic/id1591366129">
                 <picture>
                     <source srcSet={MacAppStoreDark} media="(prefers-color-scheme: dark)" />
@@ -34,25 +34,25 @@ class Preview extends React.Component {
             </a>
         );
 
-        let macComponent: JSX.Element = (
+        const macComponent: JSX.Element = (
             <img className="laptop-bitmap" src={Laptop} alt="MacBook Pro running Convusic" />
         );
 
-        let phoneComponent: JSX.Element = (
+        const phoneComponent: JSX.Element = (
             <picture>
                 <source srcSet={DarkPhone} media="(prefers-color-scheme: dark)" />
                 <img className="phone-bitmap" src={LightPhone} alt= "iPhone running Convusic" />
             </picture>
         );
 
-        let padComponent: JSX.Element = (
+        const padComponent: JSX.Element = (
             <picture>
                 <source srcSet={DarkPad} media="(prefers-color-scheme: dark)" />
                 <img className="pad-bitmap" src={LightPad} alt="iPad running Convusic" />
             </picture>
         )
 
-        let dualComponent: JSX.Element = (
+        const dualComponent: JSX.Element = (
             <picture>
                 <source srcSet={DarkDual} media="(prefers-color-scheme: dark)" />
                 <img className="dual-bitmap" src={LightDual} alt="iPhone and iPad running Convusic" />
