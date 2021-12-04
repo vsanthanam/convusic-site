@@ -4,7 +4,8 @@ import AppIcon from './images/AppIcon.png';
 import AppStoreLight from './images/AppStore-Light.svg';
 import AppStoreDark from './images/AppStore-Dark.svg';
 import AppleMusicMobile from './images/AppleMusicMobile.svg';
-import SpotifyMobile from './images/SpotifyMobile.png';
+import LightSpotifyMobile from './images/LightSpotifyMobile.svg';
+import DarkSpotifyMobile from './images/DarkSpotifyMobile.svg';
 
 class Explanation extends React.Component {
 
@@ -13,7 +14,10 @@ class Explanation extends React.Component {
             <div className="explanation-container">
                 <div className="explanation-content">
                     <div className="artwork-container">
-                        <img className="mobile-only mobile-icon" src={SpotifyMobile} alt="Spotify"/>
+                        <picture>
+                            <source srcSet={DarkSpotifyMobile} media="(prefers-color-scheme: dark)" />
+                            <img className="mobile-only mobile-icon" src={LightSpotifyMobile} alt="Spotify"/>
+                        </picture>
                         <span className="service-container">
                             <div className="service-link spotify">
                                 <div className="service-icon">
@@ -37,7 +41,9 @@ class Explanation extends React.Component {
                                 <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM23.7071 8.70711C24.0976 8.31658 24.0976 7.68342 23.7071 7.29289L17.3431 0.928932C16.9526 0.538408 16.3195 0.538408 15.9289 0.928932C15.5384 1.31946 15.5384 1.95262 15.9289 2.34315L21.5858 8L15.9289 13.6569C15.5384 14.0474 15.5384 14.6805 15.9289 15.0711C16.3195 15.4616 16.9526 15.4616 17.3431 15.0711L23.7071 8.70711ZM1 9H23V7H1V9Z" fill="#000000"/>
                             </svg>
                         </span>
-                        <img className="mobile-only mobile-icon" src={AppleMusicMobile} alt="Apple Music" />
+                        <picture>
+                            <img className="mobile-only mobile-icon" src={AppleMusicMobile} alt="Apple Music" />
+                        </picture>
                         <span className="service-container">
                             <div className="service-link apple-music">
                                 <div className="service-icon">
