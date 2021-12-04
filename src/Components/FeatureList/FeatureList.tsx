@@ -10,12 +10,12 @@ class FeatureList extends React.Component {
                 <div className="feature-list-section-content">
                     <div className="feature-grid">
                         <div className="feature-row">
-                            <Feature name="Open Any Song, Anywhere" description="Convusic supports many of the most popular services including Apple Music, Spotify, Tidal, and YouTube Music" icon="artist"/>
-                            <Feature name="Simple & Instant" description="Enable Convusic and forget about it. Any music streaming link will automatically open in your app of choice. No interaction required." icon="puzzle"/>
+                            <Feature name="Open Any Song, Anywhere" description={<p>Convusic supports many of the most popular services including Apple Music, Spotify, Tidal, and YouTube Music.</p>} icon="artist" />
+                            <Feature name="Simple & Instant" description={<p>Enable Convusic and forget about it. Any music streaming link will automatically open in your app of choice. No interaction required. <a href="https://youtu.be/Z0-AWHiuo6s"><strong>See it in action</strong></a>.</p>} icon="puzzle"/>
                         </div>
                         <div className="feature-row">
-                            <Feature name="Private & Secure" description="Convusic's client apps and browser extensions feature no advertising, use no third-party trackers, and collect no user identifiable data of any kind." icon="shield"/>
-                            <Feature name="Cross Platform" description="Convusic works on iPhone, iPad, and Macintosh, and supports iCloud syncing and Handoff for a seamless, integrated experience." icon="connected-apps"/>
+                            <Feature name="Private & Secure" description={<p>Convusic's client apps and browser extensions feature no advertising, use no third-party trackers, and collect no user identifiable data of any kind.</p>} icon="shield"/>
+                            <Feature name="Cross Platform" description={<p>Convusic works on iPhone, iPad, and Macintosh, and supports iCloud syncing and Handoff for a seamless, integrated experience.</p>} icon="connected-apps"/>
                         </div>
                     </div>
                     <div className="inspiration">

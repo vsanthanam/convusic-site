@@ -3,7 +3,7 @@ import './Feature.scss';
 
 type FeatureProps = {
     name: String,
-    description: String,
+    description: JSX.Element,
     icon: String
 }
 
@@ -45,11 +45,12 @@ class Feature extends React.Component<FeatureProps> {
             }
         }();
 
+        
         return(
             <div className="feature-container">
                 {icon}
                 <strong><p>{this.props.name}</p></strong>
-                <p>{this.props.description}</p>
+                {this.props.description}
             </div>
         )
     }
