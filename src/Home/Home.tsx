@@ -3,8 +3,6 @@ import Banner from '../Components/Banner/Banner';
 import FeatureList from '../Components/FeatureList/FeatureList'
 import Preview from '../Components/Preview/Preview';
 
-declare var window: any;
-
 class Home extends React.Component {
 
     render(): JSX.Element {
