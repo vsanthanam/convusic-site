@@ -2,7 +2,15 @@
 @import '../../../../Styles/Shared.scss';
 
 
+$apple-music-background-light: #f9CcD7;
+$apple-music-background-dark: #5c0c14;
+$apple-music-stroke: #fc3c44;
+$spotify-background-light: #DBFFDA;
+$spotify-background-dark: #2A5329;
+$spotify-stroke: #05BC01;
+
 .explanation-container {
+
 
     display: flex;
     justify-content: center;

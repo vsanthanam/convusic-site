@@ -1,6 +1,9 @@
 @import '../../Styles/Colors.scss';
 
 .feature-list-section-container {
+
+    $link-color: #FF0000;
+    
     background-color: $background-light-secondary;
     display: flex;
     justify-content: center;
@@ -27,7 +30,7 @@
     
         a {
             text-decoration: none;
-            color: red;
+            color: $link-color;
         }
     
     }
