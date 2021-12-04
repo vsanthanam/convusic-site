@@ -1,8 +1,11 @@
+@import '../Styles/Colors.scss';
+
 .press-kit-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
+    padding-bottom: 100px;
 
     .press-kit-content {
         display: flex;
@@ -29,13 +32,21 @@
             }
         }
 
+        h2 {
+            line-height: 1.5rem;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
         p {
             line-height: 1.5rem;
+            margin-top: 15px;
+            margin-bottom: 15px;
         }
 
         a {
             text-decoration: none;
-            color: #FF0000;
+            color: $link-color;
         }
     }
 }
