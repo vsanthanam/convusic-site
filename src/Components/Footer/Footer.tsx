@@ -13,7 +13,7 @@ class Footer extends React.Component {
         return(
             <div className="footer-container">
                 <FooterItem title="Home" type={FooterItemType.Route} destination="/" />
-                <FooterItem title="PressKit" type={FooterItemType.URL} destination="/downloads/presskit.zip" />
+                <FooterItem title="Press Kit" type={FooterItemType.URL} destination="/downloads/presskit.zip" />
                 <FooterItem title="Twitter" type={FooterItemType.URL} destination="https://twitter.vsanthanam.com" />
                 <FooterItem title="Privacy" type={FooterItemType.Route} destination="privacy" />
                 <FooterItem title="Contact" type={FooterItemType.URL} destination="mailto:talkto@vsanthanam.com" />
