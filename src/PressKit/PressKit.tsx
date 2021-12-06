@@ -47,6 +47,46 @@ class PressKit extends React.Component {
                     <Question title="Does it slow down my web browser?" answer={<p>Nope! Convusic doesn't even have the permissions to run on websites that aren't music streaming services. It requires no background processes and consumes no additional battery life, activating only when you visit the website belonging to one of the four supported services.</p>} />
                     <Question title="Can I choose which music app to use manually each time?" answer={<p>Yes! You can choose to open the music link in the Convusic app using a button in the extension menu, and manually select your service of choice each time. This can be useful if you use multiple streaming services or are installing Convusic on a shared family computer.</p>} />
                     <Question title="Do I need to buy Convusic multiple times for all my devices?" answer={<p>Nope! A single purchase on the app store includes both the iOS and the macOS versions, and can be installed on every device you own.</p>} />
+                    <Question title="What services and media types are supported?" answer={<p>Convusic support most music content from Apple Music, Spotify, Tidal, and YouTube Music. New media types and services are added over time.</p>} />
+                    <div className="table-container">
+                        <table>
+                            <tr>
+                                <th></th>
+                                <th>Song</th>
+                                <th>Album</th>
+                                <th>Artist</th>
+                                <th>Playlist</th>
+                            </tr>
+                            <tr>
+                                <th>Apple Music</th>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <th>Spotify</th>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <th>Tidal</th>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <th>YouTube Music</th>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                                <td>No</td>
+                            </tr>
+                        </table>
+                    </div>
                     <Question title="I use a different music streaming service. Can you add support for it?" answer={<p>Maybe! If the service has a public facing catalog search API, I'm happy to investigate adding support. Send me an email with the details.</p>} />
                 </div>
             </div>
