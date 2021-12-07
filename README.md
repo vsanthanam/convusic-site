@@ -9,7 +9,9 @@ However, I didn't feel like learning a new tool, so this project was bootstrappe
 
 CRA has also matured since I last used it, and support for TypeScript and CSS preprocessors like SASS no longer require third party script packages. This project uses both.
 
-## Development
+Large parts of the site's design are inspired by [Amplosion](https://www.amplosion.app).
+
+## Development  
 
 Getting Started
 
@@ -32,3 +34,8 @@ Deploy to GitHub Pages
 $ cd /path/to/repo
 $ npm run deploy
 ```
+
+## Some Neat Details
+
+- The website supports dark mode
+- The app previews are client specific. You'll see an iPad if you open it on an iPad, a Mac if you open it on a Mac, etc.
