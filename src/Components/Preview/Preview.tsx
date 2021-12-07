@@ -6,7 +6,8 @@ import LightPad from './images/LightPad.png';
 import DarkPad from './images/DarkPad.png';
 import LightDual from './images/LightDual.png';
 import DarkDual from './images/DarkDual.png';
-import Laptop from './images/Laptop.png';
+import LightLaptop from './images/LaptopLight.png';
+import DarkLaptop from './images/LaptopDark.png';
 import MobileAppStoreLight from './images/MobileAppStore-Light.svg';
 import MobileAppStoreDark from './images/MobileAppStore-Dark.svg';
 import MacAppStoreLight from './images/MacAppStore-Light.svg';
@@ -35,7 +36,10 @@ class Preview extends React.Component {
         );
 
         const macComponent: JSX.Element = (
-            <img className="laptop-bitmap" src={Laptop} alt="MacBook Pro running Convusic" />
+            <picture>
+                <source srcSet={DarkLaptop} media="(prefers-color-scheme: dark)" />
+                <img className="laptop-bitmap" src={LightLaptop} alt="MacBook Pro running Convusic" />
+            </picture>
         );
 
         const phoneComponent: JSX.Element = (
