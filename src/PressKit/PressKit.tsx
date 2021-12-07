@@ -50,41 +50,45 @@ class PressKit extends React.Component {
                     <Question title="What services and media types are supported?" answer={<p>Convusic support most music content from Apple Music, Spotify, Tidal, and YouTube Music. New media types and services are added over time.</p>} />
                     <div className="table-container">
                         <table>
-                            <tr>
-                                <th></th>
-                                <th>Song</th>
-                                <th>Album</th>
-                                <th>Artist</th>
-                                <th>Playlist</th>
-                            </tr>
-                            <tr>
-                                <th>Apple Music</th>
-                                <td>Yes</td>
-                                <td>Yes</td>
-                                <td>Yes</td>
-                                <td>No</td>
-                            </tr>
-                            <tr>
-                                <th>Spotify</th>
-                                <td>Yes</td>
-                                <td>Yes</td>
-                                <td>Yes</td>
-                                <td>No</td>
-                            </tr>
-                            <tr>
-                                <th>Tidal</th>
-                                <td>Yes</td>
-                                <td>Yes</td>
-                                <td>No</td>
-                                <td>No</td>
-                            </tr>
-                            <tr>
-                                <th>YouTube Music</th>
-                                <td>Yes</td>
-                                <td>Yes</td>
-                                <td>No</td>
-                                <td>No</td>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Song</th>
+                                    <th>Album</th>
+                                    <th>Artist</th>
+                                    <th>Playlist</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th className="service-name">Apple Music</th>
+                                    <td>✅</td>
+                                    <td>✅</td>
+                                    <td>✅</td>
+                                    <td>❌</td>
+                                </tr>
+                                <tr>
+                                    <th className="service-name">Spotify</th>
+                                    <td>✅</td>
+                                    <td>✅</td>
+                                    <td>✅</td>
+                                    <td>❌</td>
+                                </tr>
+                                <tr>
+                                    <th className="service-name">Tidal</th>
+                                    <td>✅</td>
+                                    <td>✅</td>
+                                    <td>❌</td>
+                                    <td>❌</td>
+                                </tr>
+                                <tr>
+                                    <th className="service-name">YouTube Music</th>
+                                    <td>✅</td>
+                                    <td>✅</td>
+                                    <td>❌</td>
+                                    <td>❌</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                     <Question title="I use a different music streaming service. Can you add support for it?" answer={<p>Maybe! If the service has a public facing catalog search API, I'm happy to investigate adding support. Send me an email with the details.</p>} />

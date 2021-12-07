@@ -21,11 +21,23 @@
             border: 1px solid;
             width: 65%;
             margin-bottom: 16px;
-            margin-top: 16px;       
-        }
+            margin-top: 16px;    
+            border-collapse: collapse;  
+            
+            .service-name {
+                text-align: left;
+            }
     
-        th {
-            text-align: left;
+            th {
+                padding: 0.5rem;
+                border: 1px solid;
+            }
+    
+            td {
+                padding: 0.5rem;
+                border: 1px solid;
+                text-align: center;
+            }
         }
     }
 
