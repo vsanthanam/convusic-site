@@ -47,7 +47,7 @@ class PressKit extends React.Component {
                     <Question title="Does it slow down my web browser?" answer={<p>Nope! Convusic doesn't even have the permissions to run on websites that aren't music streaming services. It requires no background processes and consumes no additional battery life, activating only when you visit the website belonging to one of the four supported services.</p>} />
                     <Question title="Can I choose which music app to use manually each time?" answer={<p>Yes! You can choose to open the music link in the Convusic app using a button in the extension menu, and manually select your service of choice each time. This can be useful if you use multiple streaming services or are installing Convusic on a shared family computer.</p>} />
                     <Question title="Do I need to buy Convusic multiple times for all my devices?" answer={<p>Nope! A single purchase on the app store includes both the iOS and the macOS versions, and can be installed on every device you own.</p>} />
-                    <Question title="What services and media types are supported?" answer={<p>Convusic support most music content from Apple Music, Spotify, Tidal, and YouTube Music. New media types and services are added over time.</p>} />
+                    <Question title="What services and media types are supported?" answer={<p>Convusic support most music content from Apple Music, Spotify, Tidal, and YouTube Music. New media types and services are added over time. Podcasts are not supported.</p>} />
                     <div className="table-container">
                         <table>
                             <thead>
@@ -57,6 +57,7 @@ class PressKit extends React.Component {
                                     <th>Album</th>
                                     <th>Artist</th>
                                     <th>Playlist</th>
+                                    <th>Podcast</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -66,12 +67,14 @@ class PressKit extends React.Component {
                                     <td>✅</td>
                                     <td>✅</td>
                                     <td>❌</td>
+                                    <td>❌</td>
                                 </tr>
                                 <tr>
                                     <th className="service-name">Spotify</th>
                                     <td>✅</td>
                                     <td>✅</td>
                                     <td>✅</td>
+                                    <td>❌</td>
                                     <td>❌</td>
                                 </tr>
                                 <tr>
@@ -80,11 +83,13 @@ class PressKit extends React.Component {
                                     <td>✅</td>
                                     <td>❌</td>
                                     <td>❌</td>
+                                    <td>❌</td>
                                 </tr>
                                 <tr>
                                     <th className="service-name">YouTube Music</th>
                                     <td>✅</td>
                                     <td>✅</td>
+                                    <td>❌</td>
                                     <td>❌</td>
                                     <td>❌</td>
                                 </tr>
