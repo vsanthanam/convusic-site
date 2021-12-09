@@ -11,6 +11,8 @@ CRA has also matured since I last used it, and support for TypeScript and CSS pr
 
 Large parts of the site's design are inspired by [Amplosion](https://www.amplosion.app).
 
+At some point, I will rewrite this site using [next.js](https://nextjs.org) because apparently that's what all the cool kids are doing, but I probably won't have the time in the near future. The [incomplete version](https://github.com/vsanthanam/convusic-site-next) is here for your perusal.
+
 ## Development  
 
 Getting Started
