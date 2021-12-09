@@ -1,6 +1,7 @@
 import React from 'react';
 import './PressKit.scss';
-import MacIcon from './images/mac-icon-shadowless.svg';
+import DesktopAppIcon from './images/AppIcon-Desktop.svg';
+import MobileAppIcon from './images/AppIcon-Mobile.svg';
 import ArrowDown from './images/arrow-down.svg';
 
 type QuestionProps = {
@@ -85,7 +86,8 @@ class PressKit extends React.Component {
             <div className="press-kit-container">
                 <div className="press-kit-content">
                     <picture>
-                        <img className="mac-icon" src={MacIcon} alt="Convusic Icon" />
+                        <img className="mac-icon desktop-only" src={DesktopAppIcon} alt="Convusic Icon" />
+                        <img className="mac-icon mobile-only" src={MobileAppIcon} alt="Convusic Icon" />
                     </picture>
                     <h1>Convusic Press Kit</h1>
                     <p>Convusic is a Safari Extension that automatically redirect music streaming links from Apple Music, Spotify, Tidal, or YouTube Music to your app of choice. Tell us which app you use in the settings menu, and links from all other services will automatically open in that app instead. Convusic is available on the App Store for $0.99, and works on iOS 15 and macOS Monterey.</p>
