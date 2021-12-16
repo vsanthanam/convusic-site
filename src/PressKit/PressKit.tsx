@@ -71,6 +71,14 @@ class FeatureTable extends React.Component {
                         <td>❌</td>
                         <td>❌</td>
                     </tr>
+                    <tr>
+                        <th className="service-name">Pandora</th>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
