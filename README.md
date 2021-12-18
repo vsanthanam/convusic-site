@@ -41,3 +41,4 @@ $ npm run deploy
 
 - The website supports dark mode
 - The app previews are client specific. You'll see an iPad if you open it on an iPad, a Mac if you open it on a Mac, etc.
+- The music app service icons are randomly selected everytime the home page component is mounted.
