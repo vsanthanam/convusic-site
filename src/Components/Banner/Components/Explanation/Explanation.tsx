@@ -11,19 +11,29 @@ import DarkPandora from './images/DarkPandora.png';
 import LightPandora from './images/LightPandora.svg';
 import DarkTidal from './images/DarkTidal.svg';
 import LightTidal from './images/LightTidal.svg';
+import DarkYouTube from './images/DarkYouTube.svg';
+import LightYouTube from './images/LightYouTube.svg';
 
 enum MusicIdentifier {
     AppleMusic,
     Spotify,
     Pandora,
-    Tidal
+    Tidal,
+    YouTube
 }
 
 class Explanation extends React.Component {
 
     render(): JSX.Element {
 
-        const services = [MusicIdentifier.AppleMusic, MusicIdentifier.AppleMusic, MusicIdentifier.Pandora, MusicIdentifier.Tidal];
+        const services = [
+            MusicIdentifier.AppleMusic,
+            MusicIdentifier.Pandora,
+            MusicIdentifier.AppleMusic,
+            MusicIdentifier.Tidal,
+            MusicIdentifier.AppleMusic,
+            MusicIdentifier.YouTube
+        ];
 
         const identifier = services[Math.floor(Math.random() * services.length)]
 
@@ -54,6 +64,13 @@ class Explanation extends React.Component {
                         <picture>
                             <source srcSet={DarkTidal} media="(prefers-color-scheme: dark)" />
                             <img className="app-icon" src={LightTidal} alt="Tidal" />
+                        </picture>
+                    )
+                case MusicIdentifier.YouTube:
+                    return(
+                        <picture>
+                            <source srcSet={DarkYouTube} media="(prefers-color-scheme: dark)" />
+                            <img className="app-icon" src={LightYouTube} alt="YouTube Music" />
                         </picture>
                     )
             }
