@@ -18,7 +18,7 @@ class FeatureList extends React.Component {
                             <Feature name="Cross Platform" description={<p>Convusic works on iPhone, iPad, and Macintosh, and supports iCloud syncing and Handoff for a seamless, integrated experience.</p>} icon={FeatureIcon.ConnectedApps} />
                         </div>
                         <div className="feature-row">
-                            <Feature name="Dark Mode" description={<p>Convusic's UI has been carefully designed to support dark mode, in the app and in the Safari extension, on both iOS and macOS</p>} icon={FeatureIcon.Moon} />
+                            <Feature name="Dark Mode" description={<p>Convusic's UI has been carefully designed to support dark mode, in the app and in the Safari extension, on both iOS and macOS.</p>} icon={FeatureIcon.Moon} />
                             <Feature name="Regular Updates" description={<p>Convusic has no subscriptions, in-app purchases, or expiring features. Buy the app once, install it on all your devices, and recieve new features & support updates for as long as its supported.</p>} icon={FeatureIcon.Infinity}/>
                         </div>
                     </div>
