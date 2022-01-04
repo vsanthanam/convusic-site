@@ -14,6 +14,8 @@ import DarkTidal from './images/DarkTidal.svg';
 import LightTidal from './images/LightTidal.svg';
 import DarkYouTube from './images/DarkYouTube.svg';
 import LightYouTube from './images/LightYouTube.svg';
+import DarkDeezer from './images/DarkDeezer.svg';
+import LightDeezer from './images/LightDeezer.svg';
 
 enum MusicIdentifier {
     AmazonMusic,
@@ -21,7 +23,8 @@ enum MusicIdentifier {
     Spotify,
     Pandora,
     Tidal,
-    YouTube
+    YouTube,
+    Deezer
 }
 
 class Explanation extends React.Component {
@@ -34,7 +37,8 @@ class Explanation extends React.Component {
             MusicIdentifier.Spotify,
             MusicIdentifier.Pandora,
             MusicIdentifier.Tidal,
-            MusicIdentifier.YouTube
+            MusicIdentifier.YouTube,
+            MusicIdentifier.Deezer
         ];
 
         const originService = services[Math.floor(Math.random() * services.length)];
@@ -83,6 +87,13 @@ class Explanation extends React.Component {
                     return(
                         <picture>
                             <img className="app-icon" src={AmazonMusic} alt="Amazon Music" />
+                        </picture>
+                    )
+                case MusicIdentifier.Deezer:
+                    return(
+                        <picture>
+                            <source srcSet={DarkDeezer} media="(prefers-color-scheme: dark)" />
+                            <img className="app-icon" src={LightDeezer} alt="Deezer" />
                         </picture>
                     )
             }
