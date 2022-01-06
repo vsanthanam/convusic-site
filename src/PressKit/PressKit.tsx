@@ -121,7 +121,7 @@ class PressKit extends React.Component {
                                 <img className="download-icon" src={ArrowDown} alt="Download Press Kit"/>
                             </a>
                         </picture>
-                        <a href="/downloads/convusic-presskit.zip">
+                        <a href="https://drive.google.com/file/d/1sdiEXKwGRp9H68RDrW-60hqmp2kig7Hw/view?usp=sharing">
                             <h3>Download Press Kit</h3>
                         </a>
                     </span>
