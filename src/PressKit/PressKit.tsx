@@ -117,7 +117,7 @@ class PressKit extends React.Component {
                     <p>Convusic is a Safari Extension that automatically redirects music streaming links from Apple Music, Amazon Music, Deezer, Pandora, Spotify, Tidal, or YouTube Music to your app of choice. Tell us which app you use in the settings menu, and links from all other services will automatically open in that app instead. Convusic is available on the App Store for $0.99, and works on iOS 15 and macOS Monterey.</p>
                     <span className="download-container">
                         <picture>
-                            <a href="/downloads/convusic-presskit.zip">
+                            <a href="https://drive.google.com/file/d/1sdiEXKwGRp9H68RDrW-60hqmp2kig7Hw/view?usp=sharing">
                                 <img className="download-icon" src={ArrowDown} alt="Download Press Kit"/>
                             </a>
                         </picture>
