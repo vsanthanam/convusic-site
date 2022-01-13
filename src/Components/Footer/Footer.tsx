@@ -14,7 +14,7 @@ class Footer extends React.Component {
             <div className="footer-container">
                 <FooterItem title="Home" type={FooterItemType.Route} destination="/" />
                 <FooterItem title="Privacy" type={FooterItemType.Route} destination="privacy" />
-                <FooterItem title="Contact" type={FooterItemType.URL} destination="mailto:talkto@vsanthanam.com" />
+                <FooterItem title="Contact" type={FooterItemType.URL} destination="mailto:support@convusic.app" />
                 <FooterItem title="Twitter" type={FooterItemType.URL} destination="https://twitter.vsanthanam.com" />
                 <FooterItem title="Press Kit" type={FooterItemType.Route} destination="/presskit" />
             </div>
