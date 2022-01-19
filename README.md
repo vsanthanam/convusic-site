@@ -30,13 +30,6 @@ $ cd /path/to/repo
 $ npm test
 ```
 
-Deploy to GitHub Pages
-
-```
-$ cd /path/to/repo
-$ npm run deploy
-```
-
 ## Some Neat Details
 
 - The website supports dark mode
