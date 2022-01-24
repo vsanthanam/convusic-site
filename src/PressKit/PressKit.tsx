@@ -133,6 +133,7 @@ class PressKit extends React.Component {
                     <Question title="What services and media types are supported?" answer={<p>Convusic support most music content from Apple Music, Pandora, Spotify, Tidal, and YouTube Music. New media types and services are added over time. Podcasts and playlists are not currently supported.</p>} />
                     <FeatureTable />
                     <Question title="I use a different music streaming service. Can you add support for it?" answer={<p>Maybe! If the service has a public facing catalog search API, I'm happy to investigate adding support. Send me an email with the details.</p>} />
+                    <Question title="I found a supported URL that Convusic either couldn't convert, or converted incorrectly!" answer={<p>I want to hear more! Please fill out <a href="https://forms.gle/m56KTmHdddaY47QY7">this form</a>, and I'll get back to you ASAP.</p>} />
                     <Question title="I'd like a promo code to test Convusic or access to TestFlight. Can you add me?" answer={<p>Maybe! Send me an email with the details and I'll see what I can do.</p>} />
                 </div>
             </div>
